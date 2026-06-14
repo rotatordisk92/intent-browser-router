@@ -6,7 +6,8 @@ setlocal enabledelayedexpansion
 
 set PROJECT_DIR=%~dp0
 set BUILD_DIR=%PROJECT_DIR%app\build
-set OUTPUT_APK=%BUILD_DIR%\outputs\apk\release\app-release.apk
+set OUTPUT_APK=%BUILD_DIR%\outputs\apk\release\app-release-unsigned.apk
+set OUTPUT_APK_SIGNED=%BUILD_DIR%\outputs\apk\release\app-release.apk
 set KEYSTORE_FILE=%PROJECT_DIR%keystore.jks
 set KEYSTORE_PASSWORD=android
 set KEY_ALIAS=android
@@ -47,21 +48,28 @@ if not exist "%OUTPUT_APK%" (
     exit /b 1
 )
 
+REM Clean up old signed APK
+if exist "%OUTPUT_APK_SIGNED%" del /f "%OUTPUT_APK_SIGNED%"
+
 echo ✍️  Signing APK...
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 ^
     -keystore "%KEYSTORE_FILE%" ^
     -storepass "%KEYSTORE_PASSWORD%" ^
+    -sigalg SHA256withRSA ^
+    -digestalg SHA-256 ^
     -keypass "%KEY_PASSWORD%" ^
     "%OUTPUT_APK%" "%KEY_ALIAS%"
 
+move /Y "%OUTPUT_APK%" "%OUTPUT_APK_SIGNED%"
+
 echo ✅ Verifying signature...
-jarsigner -verify -verbose "%OUTPUT_APK%"
+jarsigner -verify -verbose "%OUTPUT_APK_SIGNED%"
 
 echo.
 echo ✨ Success!
-echo 📱 APK ready: %OUTPUT_APK%
+echo 📱 APK ready: %OUTPUT_APK_SIGNED%
 echo.
 echo To install on your device:
-echo   adb install -r "%OUTPUT_APK%"
+echo   adb install -r "%OUTPUT_APK_SIGNED%"
 
 endlocal
