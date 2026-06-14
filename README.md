@@ -2,7 +2,7 @@
 
 [Download](https://github.com/rotatordisk92/intent-browser-router/releases/latest)
 
-**A lightweight Android browser router** that intelligently directs links to your preferred browser based on domain patterns.
+**A lightweight Android browser router app** that intelligently directs links to your preferred browser based on domain patterns.
 
 <img src="./docs/intent-browser-router-screen.jpg" width="400" alt="Screenshot">
 
