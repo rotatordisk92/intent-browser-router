@@ -1,0 +1,43 @@
+# Android-specific
+*.apk
+*.ap_
+*.aar
+*.o
+*.so
+
+# Build directories
+/build/
+/app/build/
+.gradle/
+gradle/
+build.log
+
+# IDE-specific
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local properties (SDK paths)
+local.properties
+
+# Keystore (DO NOT COMMIT - store separately!)
+keystore.jks
+*.keystore
+*.jks
+
+# Lint
+lint.xml
+lint-results.xml
+
+# Generated
+gen/
+out/

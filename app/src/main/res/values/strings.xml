@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntentBrowserRouter</string>
+    <string name="default_browser">Default Browser</string>
+    <string name="add_rule">Add Rule</string>
+    <string name="edit_rule">Edit Rule</string>
+    <string name="delete_rule">Delete</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="hostname_pattern">Hostname Pattern</string>
+    <string name="incognito">Launch in Incognito</string>
+    <string name="no_rules">No rules configured</string>
+    <string name="missing_browser">Missing Browser</string>
+    <string name="reassign">Re-assign</string>
+    <string name="export">Export</string>
+    <string name="import_rules">Import</string>
+    <string name="settings">Settings</string>
+    <string name="app_links_info">Apps with verified domain links will open automatically in their assigned app. You cannot override these here.</string>
+    <string name="view_verified_links">View Verified Links</string>
+    <string name="wildcard_hint">Use * for wildcard (e.g., *.github.com, reddit.*, *stream*)</string>
+</resources>
