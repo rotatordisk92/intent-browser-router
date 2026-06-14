@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Overall Window Container and Header (Dark Grey) -->
+    <path
+        android:fillColor="@color/ic_launcher_header_dark_grey"
+        android:pathData="M16.5,12.5h75c2.21,0 4,1.79 4,4v8c0,0 0,0 0,0h-83c0,0 0,0 0,0v-8c0,-2.21 1.79,-4 4,-4Z" />
+
+    <!-- Window Dots (Left Soft Blue, Middle Yellow, Right Light Blue) -->
+    <path
+        android:fillColor="@color/ic_launcher_soft_blue"
+        android:pathData="M23.5,18.5m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+    <path
+        android:fillColor="@color/ic_launcher_yellow_dot"
+        android:pathData="M33.5,18.5m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+    <path
+        android:fillColor="@color/ic_launcher_light_blue_dot"
+        android:pathData="M43.5,18.5m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+
+    <!-- Hierarchy Connecting Lines (Dark Grey) -->
+    <path
+        android:strokeColor="@color/ic_launcher_lines_dark_grey"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M54,49V61M27,61h54M27,61V73M54,61V73M81,61V73" />
+
+    <!-- Hierarchy Boxes (All Soft Blue) -->
+    <!-- Top Box -->
+    <path
+        android:fillColor="@color/ic_launcher_soft_blue"
+        android:pathData="M45.5,38.5h17c2.21,0 4,1.79 4,4v13c0,2.21 -1.79,4 -4,4h-17c-2.21,0 -4,-1.79 -4,-4v-13c0,-2.21 1.79,-4 4,-4Z" />
+
+    <!-- Bottom Left Box -->
+    <path
+        android:fillColor="@color/ic_launcher_soft_blue"
+        android:pathData="M18.5,73.5h17c2.21,0 4,1.79 4,4v13c0,2.21 -1.79,4 -4,4h-17c-2.21,0 -4,-1.79 -4,-4v-13c0,-2.21 1.79,-4 4,-4Z" />
+
+    <!-- Bottom Middle Box -->
+    <path
+        android:fillColor="@color/ic_launcher_soft_blue"
+        android:pathData="M45.5,73.5h17c2.21,0 4,1.79 4,4v13c0,2.21 -1.79,4 -4,4h-17c-2.21,0 -4,-1.79 -4,-4v-13c0,-2.21 1.79,-4 4,-4Z" />
+
+    <!-- Bottom Right Box -->
+    <path
+        android:fillColor="@color/ic_launcher_soft_blue"
+        android:pathData="M72.5,73.5h17c2.21,0 4,1.79 4,4v13c0,2.21 -1.79,4 -4,4h-17c-2.21,0 -4,-1.79 -4,-4v-13c0,-2.21 1.79,-4 4,-4Z" />
+
+</vector>
